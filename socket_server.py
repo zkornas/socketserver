@@ -3,9 +3,22 @@ import random
 import threading
 
 quotes = [
-    "This is the FIRST quote - Zach",
-    "This is the SECOND quote - Zach",
-    "This is the THIRD quote - Zach"
+    #Princess Bride Quotes:
+    "Inconceivable! - Vizzini",
+    "I always think that everything could be a trap, which is why I am still alive. - Prince Humperdinck",
+    "As you wish. - Westley",
+    "There is a shortage of perfect breasts in the world. It would be a pity to damage yours. - Westley",
+    "Good night, Westley. Good work. Sleep well. I will most likely kill you in the morning. - Dread Pirate Roberts",
+    "This is true love. Do you think this happens every day? - Westley",
+    "Boo! - The Ancient Booer",
+    #Clueless Quotes
+    "Ugh, as if! - Cher",
+    "She could be a farmer in those clothes. - Amber",
+    "Suddenly a dark cloud settled over first period... I got a C in debate? - Cher",
+    "That was way harsh, Tai. - Cher",
+    "I was just totally clueless. - Cher",
+    "Oh my God, I am totally buggin. - Cher"
+    "Whatever. - Amber"
 ]
 
 host = "" 
@@ -24,8 +37,6 @@ tcp_socket.listen()
 print(f"Listening for connections on {host}:{port}...")
 
 def handle_tcp_client():
-
-    
 
     while True:
         tcp_client, tcp_addr = tcp_socket.accept()
